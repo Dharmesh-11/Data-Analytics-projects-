@@ -6,34 +6,44 @@ This project explores the **Netflix Titles Dataset** using both **Python (Pandas
 
 ## 📂 Project Structure
 Netflix-EDA/
+
 │── netflix_analysis.ipynb # Jupyter Notebook with full analysis
-│── netflix_titles.csv # Dataset (if included)
+
+│── netflix_titles.csv # Dataset 
+
 │── README.md # Project documentation
-│── requirements.txt # Python dependencies
 
-yaml
-Copy code
-
----
+│── requirements.txt # Python dependencie
 
 ## 🔧 Tools & Libraries Used
-- **Python** 🐍  
-  - Pandas  
-  - Matplotlib  
-  - Seaborn  
-  - Collections  
-- **SQL (SQLite)**  
-- **Jupyter Notebook**  
+- **Python** 🐍
+   
+  - Pandas
+    
+  - Matplotlib
+    
+  - Seaborn
+    
+  - Collections
+    
+  - SQL (SQLite)
+   
+  - Jupyter Notebook
 
 ---
 
 ## 🔍 Analysis Performed
 
-### 🔹 Python EDA + Visualization
-1. Movies vs TV Shows distribution  
-2. Top 10 Countries with most content  
-3. Content added over the years  
-4. Ratings distribution  
+🔹 Python EDA + Visualization
+
+1. Movies vs TV Shows distribution
+   
+2. Top 10 Countries with most content
+   
+3. Content added over the years
+ 
+4. Ratings distribution
+  
 5. Most common genres  
 
 ### 🔹 SQL Analysis + Visualization
@@ -54,23 +64,24 @@ Copy code
 
 ## 🚀 How to Run
 1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/Netflix-EDA.git
-   cd Netflix-EDA
-Install dependencies:
-
-bash
-Copy code
+ ```
+git clone https://github.com/your-username/Netflix-EDA.git
+cd Netflix-EDA
+   ```
+2. Install dependencies:
+```
 pip install -r requirements.txt
-Open the notebook:
-
-bash
-Copy code
+```
+3. Open the notebook:
+```
 jupyter notebook netflix_analysis.ipynb
+```
 📌 Dataset
+
 The dataset used is Netflix Movies and TV Shows, available on Kaggle.
 
 ✨ Future Improvements
+
 Add WordClouds for genres and cast members
 
 Analyze Top Directors & Actors
@@ -78,5 +89,7 @@ Analyze Top Directors & Actors
 Build an interactive dashboard using Streamlit
 
 📝 Author
+
 👤 Dharmesh Panpatil
+
 📧 dharmeshpanpatil01@gmial.com
