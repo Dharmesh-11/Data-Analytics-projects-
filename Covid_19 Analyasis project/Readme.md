@@ -92,5 +92,8 @@ Build a dashboard with Streamlit/Power BI
 Integrate real-time COVID-19 API
 
 
-👨‍💻 Author:- 
-Dharmesh Panpatil
+📝 Author
+
+👤 Dharmesh Panpatil
+
+📧 dharmeshpanpatil01@gmial.com
