@@ -50,27 +50,25 @@ USE pizza_sales;
 
 2️⃣ Create Tables
 The table creation scripts are provided in the file:
-pgsql
-Copy code
+
 pizza_sales_project.sql
 
 
 3️⃣ Import Data
 Import all CSV files into the corresponding tables using:
 
-MySQL Workbench → Table Data Import Wizard
-
-or use the LOAD DATA INFILE command.
+MySQL Workbench → Table Data Import Wizard or use the LOAD DATA INFILE command.
 
 📊 Data Analysis Queries
+
 🔹 Total Revenue
-sql```
+```
 SELECT ROUND(SUM(od.quantity * p.price), 2) AS total_revenue
 FROM order_details od
 JOIN pizzas p ON od.pizza_id = p.pizza_id;
 ```
 🔹 Most Popular Pizzas
-sql```
+```
 SELECT pt.name, SUM(od.quantity) AS total_sold
 FROM order_details od
 JOIN pizzas p ON od.pizza_id = p.pizza_id
@@ -81,7 +79,7 @@ LIMIT 5;
 ```
 
 🔹 Sales by Category
-sql```
+```
 SELECT pt.category, ROUND(SUM(od.quantity * p.price), 2) AS category_revenue
 FROM order_details od
 JOIN pizzas p ON od.pizza_id = p.pizza_id
@@ -90,7 +88,7 @@ GROUP BY pt.category
 ORDER BY category_revenue DESC;
 ```
 🔹 Hourly Sales Trend
-sql```
+```
 SELECT HOUR(o.order_time) AS hour, SUM(od.quantity * p.price) AS revenue
 FROM order_details od
 JOIN orders o ON od.order_id = o.order_id
@@ -99,7 +97,7 @@ GROUP BY HOUR(o.order_time)
 ORDER BY hour;
 ```
 🔹 Daily and Monthly Sales
-sql```
+```
 -- Daily
 SELECT o.order_date, SUM(od.quantity * p.price) AS daily_revenue
 FROM order_details od
@@ -118,11 +116,16 @@ ORDER BY month;
 
 ```
 💡 Key Insights
+
 Insight	Description
 Top-Selling Pizza	Identifies which pizza generated the highest revenue.
+
 Peak Order Time	Determines which hour of the day has the most sales.
+
 Top Category	Shows which pizza category (Classic, Veggie, etc.) performs best.
+
 Most Preferred Size	Finds out which pizza size sells the most.
+
 Sales Trends	Reveals daily and monthly revenue patterns.
 
 📈 Future Improvements
@@ -144,11 +147,16 @@ GitHub (for version control)
 📦 Project Files
 File	Description
 pizza_sales_project.sql	SQL script with table creation & all analytics queries
-orders.csv	Orders data
-order_details.csv	Order details
-pizzas.csv	Pizza size & price info
-pizza_types.csv	Pizza categories & ingredients
-README.md	Project documentation
+
+orders.csv	#Orders data
+
+order_details.csv	#Order details
+
+pizzas.csv	#Pizza size & price info
+
+pizza_types.csv	#Pizza categories & ingredients
+
+README.md	#Project documentation
 
 🏁 Conclusion
 This SQL project demonstrates how to perform end-to-end data analysis using raw sales data.
