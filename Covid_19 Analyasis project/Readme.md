@@ -12,9 +12,6 @@ COVID-19-Data-Analysis/
 │-- covid_analysis.ipynb # Jupyter Notebook with full analysis
 │-- README.md # Project documentation
 
-yaml
-Copy code
-
 ---
 
 ## 🛠️ Technologies Used
@@ -69,25 +66,24 @@ Copy code
    ```bash
    git clone https://github.com/your-username/COVID-19-Data-Analysis.git
    cd COVID-19-Data-Analysis
+   ```
 Install dependencies:
-
-bash
-Copy code
+```
 pip install pandas numpy matplotlib seaborn
+```
 Open Jupyter Notebook:
-
-bash
-Copy code
+```
 jupyter notebook covid_analysis.ipynb
+```
 📝 SQL Example
-sql
-Copy code
+```sql
 -- Top 5 countries with maximum confirmed cases
 SELECT "Country/Region", MAX(Confirmed) as MaxConfirmed
 FROM covid
 GROUP BY "Country/Region"
 ORDER BY MaxConfirmed DESC
 LIMIT 5;
+```
 📌 Future Improvements
 Add predictive analysis using Machine Learning
 
@@ -95,5 +91,9 @@ Build a dashboard with Streamlit/Power BI
 
 Integrate real-time COVID-19 API
 
-👨‍💻 Author
-Dharmesh Panpatil
+
+📝 Author
+
+👤 Dharmesh Panpatil
+
+📧 dharmeshpanpatil01@gmial.com

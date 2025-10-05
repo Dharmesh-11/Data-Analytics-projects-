@@ -2,7 +2,6 @@
 
 ## 📌 Project Overview  
 This project is designed to manage and analyze **retail transactions** data. It demonstrates how SQL can be used to create a database, store retail information, and run **analytical queries** for business insights such as stock availability, revenue, customer trends, and product performance.  
-
 The project simulates a real-world **inventory and sales analytics system** that can help retail businesses make data-driven decisions.  
 
 ---
@@ -139,4 +138,8 @@ Language: SQL
 📜 License
 This project is open-source and free to use for educational and learning purposes.
 
-👨‍💻 Author: Dharmesh Panpatil
+📝 Author
+
+👤 Dharmesh Panpatil
+
+📧 dharmeshpanpatil01@gmial.com
